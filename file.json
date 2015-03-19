@@ -1,0 +1,29 @@
+{
+
+	"email_host" : "localhost",
+	"email_sender_address" : "somebody",
+	"email_receiver_address" : "system.administrator@company.com",
+	"email_username" : "something",
+	"email_password" : "something",
+ 	
+
+"log_files" :
+[
+{
+"keywords": ["error", "ERROR", "Critical"],
+"location": "/var/log/syslog"
+},
+{
+"keywords": ["error", "ERROR", "Critical","pam_unix"],
+"location": "/network/drive/syslog-ext1.log"
+},
+{
+"keywords": ["error", "ERROR", "Critical","terminated"],
+"location": "/network/drive/syslog-ext10.log"
+},
+{
+"keywords": ["Critical", "error"],
+"location": "/network/drive/wildcardExample/in*a*"
+}
+]
+}
